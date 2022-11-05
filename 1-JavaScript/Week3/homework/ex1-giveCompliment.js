@@ -33,7 +33,7 @@ function giveCompliment(name) {
   ];
   const compliment =
     compliments[Math.floor(Math.random() * compliments.length)];
-  return console.log(`You are ${compliment}, ${name}!`);
+  return `You are ${compliment}, ${name}!`;
 }
 
 function main() {
