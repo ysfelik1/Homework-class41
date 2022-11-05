@@ -31,7 +31,8 @@ function giveCompliment(name) {
     'Hard Worker',
     'Brave',
   ];
-  const compliment = compliments[Math.random() * compliments.length];
+  const compliment =
+    compliments[Math.floor(Math.random() * compliments.length)];
   return console.log(`You are ${compliment}, ${name}!`);
 }
 
@@ -52,5 +53,5 @@ function main() {
 // ! Do not change or remove the code below
 if (process.env.NODE_ENV !== 'test') {
   main();
+  module.exports = giveCompliment;
 }
-module.exports = giveCompliment;
