@@ -41,8 +41,7 @@ function selectRandomly(arrayName) {
 function tellFortune(kidsArr, namesArr, locationsArr, jobsArr) {
   return `You will be a ${selectRandomly(jobsArr)} in ${selectRandomly(
     locationsArr
-  )}
-  , married to ${selectRandomly(namesArr)} with ${selectRandomly(
+  )}, married to ${selectRandomly(namesArr)} with ${selectRandomly(
     kidsArr
   )} kids.`;
 }
@@ -50,9 +49,9 @@ function tellFortune(kidsArr, namesArr, locationsArr, jobsArr) {
 function main() {
   const numKids = [1, 5, 3, 4, 6];
 
-  const partnerNames = ['Cansu', 'Angelina', 'Jetske', 'Sofia', 'Stephanie'];
+  const partnerNames = ['Cansu', 'Angelina', 'Angela', 'Sofia', 'Stephanie'];
 
-  const locations = ['Istanbul', 'Rotterdam', 'Amsterdam', `Roma`, 'Houston'];
+  const locations = ['Istanbul', 'Rotterdam', 'Amsterdam', 'Roma', 'Houston'];
 
   const jobTitles = [
     'Ceo',
