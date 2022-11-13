@@ -238,3 +238,240 @@ Ran all test suites matching /ex2-mondaysWorth.test.js/i.
 2022-11-13 02:20:44 info: -------------------------------------------------
 2022-11-13 02:20:48 info: All unit tests passed.
 2022-11-13 02:20:56 info: All steps were completed successfully
+2022-11-13 02:43:42 info: -------------------------------------------------
+2022-11-13 02:43:42 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 02:43:42 info: -------------------------------------------------
+2022-11-13 02:43:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (17 ms)
+    × should not modify the original `fruitBasket` array (1 ms)
+    × should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      35 |   test('should take two parameters', () => {
+      36 |     // TODO replace next line with your code
+    > 37 |     expect(false).toBe(true);
+         |                   ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:19)
+
+  ● sanitizeFruitBasket › should not modify the original `fruitBasket` array
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      42 |     const originalFruitBasketContents = [...fruitBasket];
+      43 |     // TODO replace next line with your code
+    > 44 |     expect(false).toBe(true);
+         |                   ^
+      45 |   });
+      46 |
+      47 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:44:19)
+
+  ● sanitizeFruitBasket › should return a new array that does not include the unwanted `lemon`
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      47 |   test('should return a new array that does not include the unwanted `lemon`', () => {
+      48 |     // TODO replace next line with your code
+    > 49 |     expect(false).toBe(true);
+         |                   ^
+      50 |   });
+      51 | });
+      52 |
+
+      at Object.toBe (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:49:19)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        2.877 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-13 02:43:52 error: *** ESLint Report ***
+
+ex3-lemonAllergy.test.js
+  29:10  error  'sanitizeFruitBasket' is defined but never used                   no-unused-vars
+  42:11  error  'originalFruitBasketContents' is assigned a value but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-11-13 02:56:15 info: -------------------------------------------------
+2022-11-13 02:56:15 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 02:56:15 info: -------------------------------------------------
+2022-11-13 02:56:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (10 ms)
+    √ should not modify the original `fruitBasket` array (3 ms)
+    √ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      35 |   test('should take two parameters', () => {
+      36 |     // TODO replace next line with your code
+    > 37 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.404 s, estimated 3 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-13 02:58:17 info: -------------------------------------------------
+2022-11-13 02:58:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 02:58:17 info: -------------------------------------------------
+2022-11-13 02:58:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (15 ms)
+    √ should not modify the original `fruitBasket` array (3 ms)
+    √ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      35 |   test('should take two parameters', () => {
+      36 |     // TODO replace next line with your code
+    > 37 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.072 s, estimated 2 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-13 03:06:17 info: -------------------------------------------------
+2022-11-13 03:06:17 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 03:06:17 info: -------------------------------------------------
+2022-11-13 03:06:21 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (10 ms)
+    √ should not modify the original `fruitBasket` array (2 ms)
+    √ should return a new array that does not include the unwanted `lemon` (2 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      35 |   test('should take two parameters', () => {
+      36 |     // TODO replace next line with your code
+    > 37 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        1.053 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-13 03:12:15 info: -------------------------------------------------
+2022-11-13 03:12:15 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 03:12:15 info: -------------------------------------------------
+2022-11-13 03:12:19 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-lemonAllergy.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js
+  sanitizeFruitBasket
+    × should take two parameters (4 ms)
+    √ should not modify the original `fruitBasket` array (1 ms)
+    √ should return a new array that does not include the unwanted `lemon` (1 ms)
+
+  ● sanitizeFruitBasket › should take two parameters
+
+    expect(received).toHaveLength(expected)
+
+    Expected length:   2
+    Received length:   0
+    Received function: [Function sanitizeFruitBasket]
+
+      35 |   test('should take two parameters', () => {
+      36 |     // TODO replace next line with your code
+    > 37 |     expect(sanitizeFruitBasket).toHaveLength(2);
+         |                                 ^
+      38 |   });
+      39 |
+      40 |   test('should not modify the original `fruitBasket` array', () => {
+
+      at Object.toHaveLength (1-JavaScript/Week4/homework/ex3-lemonAllergy.test.js:37:33)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 2 passed, 3 total
+Snapshots:   0 total
+Time:        0.715 s, estimated 1 s
+Ran all test suites matching /ex3-lemonAllergy.test.js/i.
+2022-11-13 03:25:42 info: -------------------------------------------------
+2022-11-13 03:25:42 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 03:25:42 info: -------------------------------------------------
+2022-11-13 03:25:46 info: All unit tests passed.
+2022-11-13 03:25:53 info: All steps were completed successfully
+2022-11-13 03:26:09 info: -------------------------------------------------
+2022-11-13 03:26:09 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 03:26:09 info: -------------------------------------------------
+2022-11-13 03:26:13 info: All unit tests passed.
+2022-11-13 03:26:19 info: All steps were completed successfully
+2022-11-13 03:27:28 info: -------------------------------------------------
+2022-11-13 03:27:28 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 03:27:28 info: -------------------------------------------------
+2022-11-13 03:27:32 info: All unit tests passed.
+2022-11-13 03:27:38 info: All steps were completed successfully
+2022-11-13 03:28:35 info: -------------------------------------------------
+2022-11-13 03:28:35 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2022-11-13 03:28:35 info: -------------------------------------------------
+2022-11-13 03:28:38 info: All unit tests passed.
+2022-11-13 03:28:45 info: All steps were completed successfully
