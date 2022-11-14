@@ -647,3 +647,8 @@ ex4-observable/ex4-observable.js
 2022-11-13 11:30:47 info: ------------------------------------------
 2022-11-13 11:30:52 info: All unit tests passed.
 2022-11-13 11:30:58 info: All steps were completed successfully
+2022-11-14 02:59:40 info: --------------------------------------
+2022-11-14 02:59:40 info: >>> Running Unit Test `ex5-wallet` <<<
+2022-11-14 02:59:40 info: --------------------------------------
+2022-11-14 02:59:45 info: All unit tests passed.
+2022-11-14 02:59:53 info: All steps were completed successfully
