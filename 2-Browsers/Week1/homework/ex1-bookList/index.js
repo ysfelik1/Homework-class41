@@ -35,6 +35,7 @@ function createBookList(books) {
 
     imgElement.src =
       'assets/' + book.title.split(' ').join('_').toLowerCase() + '.jpg';
+    imgElement.alt = book.isbn;
     liElement.appendChild(imgElement);
 
     newUl.appendChild(liElement);
