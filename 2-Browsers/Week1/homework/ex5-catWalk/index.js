@@ -1,7 +1,5 @@
 'use strict';
 
-const { time } = require('systeminformation');
-
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
 
@@ -26,10 +24,11 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 -----------------------------------------------------------------------------*/
 function catWalk() {
   timer += 10;
-
-  imgCat.left = Number(timer) + 'px';
+  const positionLeft = Number(timer);
+  imgCat.left = positionLeft + 'px';
 }
 let timer = 0;
 const imgCat = document.querySelector('img');
 imgCat.style.left = '0';
 window.setInterval(catWalk, 50);
+window.addEventListener('load', catWalk);
