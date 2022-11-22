@@ -24,7 +24,7 @@ function addCurrentTime() {
       m = checkTime(today.getMinutes()),
       s = checkTime(today.getSeconds());
     newP.textContent = h + ':' + m + ':' + s;
-    //works every second to get realtime
+    console.log(newP.textContent);
   }
 
   newP.style.fontSize = '2rem';
@@ -44,7 +44,7 @@ function addCurrentTime() {
 
   newDiv.appendChild(newP);
   document.body.appendChild(newDiv);
-
+  //works every second to get realtime
   window.setInterval(startTime, 1000);
 }
 

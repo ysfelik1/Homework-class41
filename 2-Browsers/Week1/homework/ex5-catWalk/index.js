@@ -1,4 +1,7 @@
 'use strict';
+
+const { time } = require('systeminformation');
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-5-the-cat-walk
 
@@ -22,7 +25,11 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-  // TODO complete this function
-}
+  timer += 10;
 
-// TODO execute `catWalk` when the browser has completed loading the page
+  imgCat.left = Number(timer) + 'px';
+}
+let timer = 0;
+const imgCat = document.querySelector('img');
+imgCat.style.left = '0';
+window.setInterval(catWalk, 50);
