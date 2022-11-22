@@ -377,3 +377,11 @@ ex3-hijackLogo.js:11:45 - Unknown word (Xdpd)
 
 ex3-hijackLogo.js:11:45 - Unknown word (Xdpd)
 
+2022-11-22 04:07:37 info: ------------------------------------------
+2022-11-22 04:07:37 info: >>> Running Unit Test `ex3-hijackLogo` <<<
+2022-11-22 04:07:37 info: ------------------------------------------
+2022-11-22 04:07:42 info: All unit tests passed.
+2022-11-22 04:07:48 error: *** Spell Checker Report ***
+
+ex3-hijackLogo.js:12:45 - Unknown word (Xdpd)
+

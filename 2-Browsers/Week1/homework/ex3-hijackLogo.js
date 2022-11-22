@@ -9,8 +9,8 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
   //added in settings.json but giving test error???
-  const elLogo = document.querySelector('lnXdpd');
-  const elLogoSrc = document.querySelector('jfN4p');
+  const elLogo = document.querySelector('.lnXdpd');
+  const elLogoSrc = document.querySelector('.jfN4p');
 
   if (elLogo !== null) {
     elLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
