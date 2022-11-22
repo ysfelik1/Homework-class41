@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="ex1-bookList/assets/the_most_human_human.jpg" alt="Google" />
+    <script>
+      'use strict';
+      /*------------------------------------------------------------------------------
+Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Browsers/Week1#exercise-3-the-logo-hijack
+
+1. Find out how to select the element that contains the Google logo, and store 
+   it in a variable.
+2. Modify the `src` and `srcset` of the logo so that it's replaced by the 
+   HackYourFuture logo instead.
+------------------------------------------------------------------------------*/
+      function hijackGoogleLogo() {
+        //added in settings.json but giving test error???
+        const elLogo = document.getElementsByTagName('img');
+
+        if (elLogo !== null && elLogo.alt === 'Google') {
+          elLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+          elLogo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+        }
+      }
+
+      hijackGoogleLogo();
+    </script>
+  </body>
+</html>

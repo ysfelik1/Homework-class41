@@ -9,16 +9,14 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
   //added in settings.json but giving test error???
-  const elLogo = document.querySelector('.lnXdpd');
-  const elLogoSrc = document.querySelector('.jfN4p');
-
+  const elLogo = document.getElementsByTagName('img');
   if (elLogo !== null) {
-    elLogo.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-    elLogo.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-  }
-  if (elLogoSrc !== null) {
-    elLogoSrc.src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-    elLogoSrc.srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+    for (let i = 0; i < elLogo.length; i++) {
+      if (elLogo[i].alt === 'Google') {
+        elLogo[i].src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+        elLogo[i].srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+      }
+    }
   }
 }
 
