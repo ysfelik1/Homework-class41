@@ -385,3 +385,175 @@ ex3-hijackLogo.js:11:45 - Unknown word (Xdpd)
 
 ex3-hijackLogo.js:12:45 - Unknown word (Xdpd)
 
+2022-11-22 07:11:27 info: --------------------------------------------
+2022-11-22 07:11:27 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 07:11:27 info: --------------------------------------------
+2022-11-22 07:11:39 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (7.436 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (320 ms)
+    × should have all TODO comments removed (2 ms)
+    × should use `setInterval()` (1 ms)
+    √ should not call `setInterval()` more than once (2003 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      103 | function testTodosRemoved(getSource) {
+      104 |   test('should have all TODO comments removed', () => {
+    > 105 |     expect(/\bTODO\b/.test(getSource())).toBeFalsy();
+          |                                          ^
+      106 |   });
+      107 | }
+      108 |
+
+      at Object.toBeFalsy (test-runner/unit-test-helpers.js:105:42)
+
+  ● whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `setInterval()`', () => {
+    > 52 |     expect(state.setInterval).toBeDefined();
+         |                               ^
+      53 |   });
+      54 |
+      55 |   test('should not call `setInterval()` more than once', async () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:52:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       2 failed, 4 passed, 6 total
+Snapshots:   0 total
+Time:        7.582 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-11-22 07:12:29 info: --------------------------------------------
+2022-11-22 07:12:29 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 07:12:29 info: --------------------------------------------
+2022-11-22 07:12:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.268 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (191 ms)
+    √ should have all TODO comments removed
+    × should use `setInterval()` (2 ms)
+    √ should not call `setInterval()` more than once (2002 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (2 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (2 ms)
+
+  ● whatsTheTime › should use `setInterval()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      50 |
+      51 |   test('should use `setInterval()`', () => {
+    > 52 |     expect(state.setInterval).toBeDefined();
+         |                               ^
+      53 |   });
+      54 |
+      55 |   test('should not call `setInterval()` more than once', async () => {
+
+      at Object.toBeDefined (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:52:31)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.423 s, estimated 8 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-11-22 07:13:02 info: --------------------------------------------
+2022-11-22 07:13:02 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 07:13:02 info: --------------------------------------------
+2022-11-22 07:13:12 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.174 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (200 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()` (1 ms)
+    × should not call `setInterval()` more than once (2016 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (1 ms)
+
+  ● whatsTheTime › should not call `setInterval()` more than once
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 1
+    Received:    30
+
+      59 |       }, 2000);
+      60 |     });
+    > 61 |     expect(callCount).toBeLessThanOrEqual(1);
+         |                       ^
+      62 |   });
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.toBeLessThanOrEqual (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:61:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.273 s, estimated 7 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-11-22 07:14:49 info: --------------------------------------------
+2022-11-22 07:14:49 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 07:14:49 info: --------------------------------------------
+2022-11-22 07:14:59 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-whatsTheTime.test.js --colors
+ FAIL  2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js (6.114 s)
+  whatsTheTime
+    √ HTML should be syntactically valid (177 ms)
+    √ should have all TODO comments removed (1 ms)
+    √ should use `setInterval()`
+    × should not call `setInterval()` more than once (2014 ms)
+    √ should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event (1 ms)
+    √ `window.onload` or `window.addEventListener` should not call its event handler function (2 ms)
+
+  ● whatsTheTime › should not call `setInterval()` more than once
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 1
+    Received:    30
+
+      59 |       }, 2000);
+      60 |     });
+    > 61 |     expect(callCount).toBeLessThanOrEqual(1);
+         |                       ^
+      62 |   });
+      63 |
+      64 |   test('should use `window.onload` or `window.addEventListener()` for the `load` or `DOMContentLoaded` event', () => {
+
+      at Object.toBeLessThanOrEqual (2-Browsers/Week1/unit-tests/ex4-whatsTheTime.test.js:61:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        6.216 s, estimated 7 s
+Ran all test suites matching /ex4-whatsTheTime.test.js/i.
+2022-11-22 07:30:39 info: --------------------------------------------
+2022-11-22 07:30:39 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 07:30:39 info: --------------------------------------------
+2022-11-22 07:30:48 info: All unit tests passed.
+2022-11-22 07:30:54 info: All steps were completed successfully
+2022-11-22 07:32:47 info: --------------------------------------------
+2022-11-22 07:32:47 info: >>> Running Unit Test `ex4-whatsTheTime` <<<
+2022-11-22 07:32:47 info: --------------------------------------------
+2022-11-22 07:32:56 info: All unit tests passed.
+2022-11-22 07:33:02 info: All steps were completed successfully
