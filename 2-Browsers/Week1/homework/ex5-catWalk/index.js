@@ -23,12 +23,24 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    https://media1.tenor.com/images/2de63e950fb254920054f9bd081e8157/tenor.gif
 -----------------------------------------------------------------------------*/
 function catWalk() {
-  timer += 10;
+  console.log(catWidth);
+
+  if (timer + catWidth + 10 <= screen.width) {
+    timer += 10;
+  } else {
+    timer = 0;
+  }
   const positionLeft = Number(timer);
-  imgCat.left = positionLeft + 'px';
+  imgCat.style.left = positionLeft + 'px';
 }
+
 let timer = 0;
 const imgCat = document.querySelector('img');
+const catWidth = Number(imgCat.width);
 imgCat.style.left = '0';
-window.setInterval(catWalk, 50);
-window.addEventListener('load', catWalk);
+
+const callIt = function () {
+  window.setInterval(catWalk, 50);
+};
+
+window.addEventListener('load', callIt);
