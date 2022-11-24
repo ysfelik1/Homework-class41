@@ -18,7 +18,7 @@ https: //hyf-js2-week1-makeme-ex1-demo.herokuapp.com/
 //cspell: enable
 
 function createBookList(books) {
-  const newUl = document.createElement('ul');
+  const ulElement = document.createElement('ul');
   books.forEach((book) => {
     const liElement = document.createElement('li');
     const pElement = document.createElement('p');
@@ -38,9 +38,9 @@ function createBookList(books) {
     imgElement.alt = book.title;
     liElement.appendChild(imgElement);
 
-    newUl.appendChild(liElement);
+    ulElement.appendChild(liElement);
   });
-  return newUl;
+  return ulElement;
 }
 
 function main() {
@@ -65,8 +65,7 @@ function main() {
     },
   ];
 
-  const ulElement = createBookList(myBooks);
-  document.querySelector('#bookList').appendChild(ulElement);
+  document.querySelector('#bookList').appendChild(createBookList(myBooks));
 }
 
 window.addEventListener('load', main);
