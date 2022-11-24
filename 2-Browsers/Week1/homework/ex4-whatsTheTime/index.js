@@ -8,9 +8,9 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
 2. Have the function execute when it's loading in the browser.
 ------------------------------------------------------------------------------*/
 function addCurrentTime() {
-  const newDiv = document.createElement('div');
-  const newP = document.createElement('p');
-  newP.textContent = 'loading...';
+  const divContent = document.createElement('div');
+  const pTime = document.createElement('p');
+  pTime.textContent = 'loading...';
   //Time formatting solution from https://stackoverflow.com/questions/18229022/how-to-show-current-time-in-javascript-in-the-format-hhmmss
 
   function checkTime(i) {
@@ -23,27 +23,27 @@ function addCurrentTime() {
       h = checkTime(today.getHours()),
       m = checkTime(today.getMinutes()),
       s = checkTime(today.getSeconds());
-    newP.textContent = h + ':' + m + ':' + s;
-    console.log(newP.textContent);
+    pTime.textContent = h + ':' + m + ':' + s;
+    console.log(pTime.textContent);
   }
 
-  newP.style.fontSize = '2rem';
-  newP.style.margin = '0';
+  pTime.style.fontSize = '2rem';
+  pTime.style.margin = '0';
 
-  newDiv.style.border = ' 5px solid';
-  newDiv.style.textAlign = 'center';
-  newDiv.style.width = '40vw';
-  newDiv.style.height = '35px';
+  divContent.style.border = ' 5px solid';
+  divContent.style.textAlign = 'center';
+  divContent.style.width = '40vw';
+  divContent.style.height = '35px';
   //centering div
-  newDiv.style.margin = 'auto';
-  newDiv.style.top = '0';
-  newDiv.style.left = '0';
-  newDiv.style.right = '0';
-  newDiv.style.bottom = '0';
-  newDiv.style.position = 'absolute';
+  divContent.style.margin = 'auto';
+  divContent.style.top = '0';
+  divContent.style.left = '0';
+  divContent.style.right = '0';
+  divContent.style.bottom = '0';
+  divContent.style.position = 'absolute';
 
-  newDiv.appendChild(newP);
-  document.body.appendChild(newDiv);
+  divContent.appendChild(pTime);
+  document.body.appendChild(divContent);
   //works every second to get realtime
   window.setInterval(startTime, 1000);
 }

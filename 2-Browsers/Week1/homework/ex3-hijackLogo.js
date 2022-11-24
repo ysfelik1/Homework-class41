@@ -8,13 +8,13 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/2-Brow
    HackYourFuture logo instead.
 ------------------------------------------------------------------------------*/
 function hijackGoogleLogo() {
-  //added in settings.json but giving test error???
-  const elLogo = document.getElementsByTagName('img');
-  if (elLogo !== null) {
-    for (let i = 0; i < elLogo.length; i++) {
-      if (elLogo[i].alt === 'Google') {
-        elLogo[i].src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
-        elLogo[i].srcset = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+  const elLogos = document.getElementsByTagName('img');
+  if (elLogos !== null) {
+    for (let i = 0; i < elLogos.length; i++) {
+      if (elLogos[i].alt === 'Google') {
+        elLogos[i].src = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+        elLogos[i].srcset =
+          'https://www.hackyourfuture.dk/static/logo-dark.svg';
       }
     }
   }
