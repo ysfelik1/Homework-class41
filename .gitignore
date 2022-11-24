@@ -121,3 +121,6 @@ dist
 .recent.json
 .disclaimer
 @homework*
+
+# vscode files
+.vscode/*
