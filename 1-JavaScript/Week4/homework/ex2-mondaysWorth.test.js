@@ -35,9 +35,14 @@ function computeEarnings(tasks, rate) {
   let totalEarning = 0;
   let totalDuration = 0;
 
-  for (let i = 0; i < tasks.length; i++) {
-    totalDuration += tasks[i].duration;
-  }
+  totalDuration = tasks
+    .map((task) => {
+      return task.duration;
+    })
+    .reduce(function (a, b) {
+      return a + b;
+    }, 0);
+
   totalEarning = (totalDuration / 60) * rate;
 
   return '€' + totalEarning.toFixed(2);
