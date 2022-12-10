@@ -22,11 +22,11 @@ function rollDie() {
       const value = Math.floor(Math.random() * 6) + 1;
       console.log(`Die value is now: ${value}`);
 
-      // Use callback to notify that the die rolled off the table after 6 rolls
+      //notify that the die rolled off the table after 6 rolls
       if (roll > 6) {
         reject(new Error('Oops... Die rolled off the table.'));
       }
-      // Use callback to communicate the final die value once finished rolling
+      //communicate the final die value once finished rolling
       if (roll === randomRollsToDo) {
         resolve(value);
       }
