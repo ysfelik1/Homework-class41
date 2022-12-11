@@ -47,3 +47,4 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+// This is why we are using promises that makes our code 'asynchronous'
